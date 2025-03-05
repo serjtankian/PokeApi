@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Pokémon Search">
+        <lightning-input label="Enter Pokémon Name or ID" value={searchTerm} onchange={handleChange}></lightning-input>
+        <lightning-button label="Search" onclick={handleSearch}></lightning-button>
+
+   <!--      <template if:true={pokemon}>
+            <div class="pokemon-card">
+                <img src={pokemon.Front_Image__c} alt="Pokemon Front">
+                <p>Name: {pokemon.Name}</p>
+                <p>Type: {pokemon.Type__c}</p>
+                <p><a href={recordUrl} target="_self">View Record</a></p>
+            </div>
+        </template>
+
+        <template if:true={error}>
+            <p class="error">{error}</p>
+        </template> -->
+    </lightning-card>
+</template>

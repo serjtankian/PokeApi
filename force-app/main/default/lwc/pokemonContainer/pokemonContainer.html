@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+        <div class="container">
+            <div class="search">
+                <c-pokemon-search onpokemoncaptured={handlePokemonCaptured}></c-pokemon-search>
+            </div>
+            <div class="list">
+                <c-pokemon-list lwc:ref="pokemonList"></c-pokemon-list>
+            </div>
+        </div>
+    </lightning-card>
+</template>

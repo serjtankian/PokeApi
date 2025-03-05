@@ -1,0 +1,23 @@
+
+<template>
+    <lightning-card title="Lista de Pokémon Capturados">
+        <template if:true={pokemons}>
+            <div class="pokemon-container">
+                <template for:each={pokemons} for:item="pokemon">
+                    <div key={pokemon.Id} class="pokemon-card">
+                        <img src={pokemon.Front_Image_URL__c} alt="Pokemon Image">
+                        <p><strong>{pokemon.Name}</strong></p>
+                        <p>ID: {pokemon.External_ID__c}</p>
+                        <p>HP: {pokemon.Hp__c}</p>
+                        <p>Attack: {pokemon.Attack__c}</p>
+                        <p>Defense: {pokemon.Defense__c}</p>
+                    </div>
+                </template>
+            </div>
+        </template>
+
+        <template if:true={error}>
+            <p class="error">{error}</p>
+        </template>
+    </lightning-card>
+</template>
