@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Size__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Weight__c &lt; 20, &quot;Tiny&quot;,
+   IF(Weight__c &lt; 300, &quot;Small&quot;,
+      IF(Weight__c &lt; 600, &quot;Big&quot;,
+         &quot;Super Big&quot;
+      )
+   )
+)</formula>
+    <label>Size</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

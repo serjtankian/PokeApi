@@ -2,11 +2,48 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>*</members>
-		<name>CustomTab</name>
+		<name>CompactLayout</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>StaticResource</name>
+		<members>PokeApp</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Pokemon_Ability__c.Is_Hidden__c</members>
+		<members>Pokemon_Ability__c.Pokemon__c</members>
+		<members>Pokemon_Ability__c.Slot__c</members>
+		<members>Pokemon__c.Attack__c</members>
+		<members>Pokemon__c.Back_Image_URL__c</members>
+		<members>Pokemon__c.Back_Image__c</members>
+		<members>Pokemon__c.Defense__c</members>
+		<members>Pokemon__c.External_ID__c</members>
+		<members>Pokemon__c.Front_Image_URL__c</members>
+		<members>Pokemon__c.Front_Image__c</members>
+		<members>Pokemon__c.Height__c</members>
+		<members>Pokemon__c.Hp__c</members>
+		<members>Pokemon__c.Number_of_Abilities__c</members>
+		<members>Pokemon__c.Size__c</members>
+		<members>Pokemon__c.Special_Attack__c</members>
+		<members>Pokemon__c.Special_Defense__c</members>
+		<members>Pokemon__c.Speed__c</members>
+		<members>Pokemon__c.Type__c</members>
+		<members>Pokemon__c.Weight__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Pokemon_Ability__c</members>
+		<members>Pokemon__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Home_PokeApp</members>
+		<members>PokeApp_UtilityBar</members>
+		<members>Pokemon_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Pokemon__c.Complete_Data</members>
+		<name>ListView</name>
 	</types>
 	<version>63.0</version>
 </Package>
